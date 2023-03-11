@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pericles Delivey</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    function setAge(param) {
+      if (param === 1) {
+        window.location.href = "shop.html?access=1"
+
+      } else {
+        window.location.href = "shop.html?access=0"
+
+      }
+    }
+  </script>
+</head>
+
+<body>
+  <main>
+    <h1>Bem vindo à Cervejaria do Péricles Delivery</h1>
+    <header>
+      <div class="container">
+        <img src="./imgs/symbol.svg" alt="">
+        <h2>Você é maior de 18 anos?</h2>
+        <div class="buttons">
+          <button onclick="setAge(1)">Sim</button>
+          <button onclick="setAge(0)">Não</button>
+        </div>
+    </header>
+
+  </main>
+</body>
+
+</html>
